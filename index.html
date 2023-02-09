@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="ranges">
+            <div class="col">
+                <div class="range range-storage">
+                    <h2>
+                        Storage: <span class="value"></span>
+                    </h2>
+                    <div class="inp-cont">
+                        <span class="value-line"></span>
+                        <input type="range"  value="100" min="0" max="1000" name="storage">
+                    </div>
+                    <div class="diapason">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="range range-transfer">
+                    <h2>
+                        Transfer: <span class="value">400 GB</span>
+                    </h2>
+                    <div class="inp-cont">
+                        <span class="value-line"></span>
+                        <input type="range"  value="400" min="0" max="1000" name="transfer">
+                    </div>
+                    <div class="diapason">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="providers">
+            <div class="providers-names">
+                <div class="provider-name">
+                    <div class="provider-info">
+                        <p>
+                            Backblaze
+                        </p>
+                    </div>
+                    <img src="./images/backblaze.svg" alt="">
+                </div>
+                <div class="provider-name">
+                    <div class="provider-info">
+                        <p>
+                            Bunny
+                        </p>
+                        <div class="btns bunny-btns">
+                            <div class="btn active">
+                                HDD
+                            </div>
+                            <div class="btn">
+                                SSD
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/bunny.svg" alt="">
+                </div>
+                <div class="provider-name">
+                    <div class="provider-info">
+                        <p>
+                            Scaleway
+                        </p>
+                        <div class="btns scaleway-btns">
+                            <div class="btn active">
+                                Multi
+                            </div>
+                            <div class="btn">
+                                Single
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/scaleway.svg" alt="">
+                </div>
+                <div class="provider-name">
+                    <div class="provider-info">
+                        <p>
+                            Vultr
+                        </p>
+                    </div>
+                    <img src="./images/vultr.webp" alt="">
+                </div>
+            </div>
+           <div class="providers-columns">
+            <div class="providers-column">
+                <div class="column backblaze-column"></div>
+                <div class="info">
+                    <p class="backblaze-num">
+                        5$
+                    </p>
+                </div>
+            </div>
+            <div class="providers-column">
+                <div class="column bunny-column"></div>
+                <div class="info">
+                    <p class="bunny-num">
+                        6$
+                    </p>
+                </div>
+            </div>
+            <div class="providers-column">
+                <div class="column scaleway-column"></div>
+                <div class="info">
+                    <p class="scaleway-num">
+                        3$
+                    </p>
+                </div>
+            </div>
+            <div class="providers-column">
+                <div class="column vultr-column"></div>
+                <div class="info">
+                    <p class="vultr-num">
+                        8$
+                    </p>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+	<script src="./js/scripts.js"></script>
+</body>
+</html>
